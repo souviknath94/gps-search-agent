@@ -3,9 +3,7 @@
 An implementation of **Local Search (Genetic Algorithm)** to solve a pathfinding problem between Panaji and Chennai.
 
 ## 📍 Problem Statement
-Vyuha, a software engineer, needs to travel from her native place, **Panaji**, back to her office in **Chennai**. Due to technical issues with standard mapping tools and the unavailability of flights, she must rely on road transport. 
-
-The goal of this agent is to find the most optimal road path covering various cities in South India while minimizing the total distance travelled.
+The goal of this agent is to find the most optimal road path covering various cities in the given map while minimizing the total distance travelled between any two points.
 
 ![Road Connectivity Map](images/map.png)
 
