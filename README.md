@@ -47,7 +47,9 @@ $$\text{score} = \text{reward} - (g(n) + h(n) + \text{penalty})$$
 
 **Step 2: Calculate Fitness Value**
 To facilitate **Roulette Wheel Selection**, all fitness scores must be positive. We map negative scores to a small value between $(0, 1]$ to ensure they have a minimal chance of selection:
-$$\text{fitness} = \begin{cases} \frac{1}{|\text{score}|}, & \text{if score} < 0 \\ \text{score}, & \text{otherwise} \end{cases}$$
+$$
+\text{fitness} = \begin{cases} \frac{1}{|\text{score}|}, & \text{if score} < 0 \\ \text{score}, & \text{otherwise} \end{cases}
+$$
 
 ### 3. Algorithm Stages
 - **Population Initialization**: We select the starting point, then randomly select neighbors of the previous point until a randomly selected chromosome size is reached.
