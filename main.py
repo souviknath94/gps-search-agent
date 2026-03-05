@@ -37,3 +37,4 @@ if __name__ == "__main__":
                                               meta_data=meta_data,
                                               num_generations=10)
     print(best_path)
+    print(f"Total distance to destination in shortest path: {best_path["distance"].sum()}")

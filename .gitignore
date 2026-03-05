@@ -12,3 +12,4 @@ ENV/
 .vscode/
 .idea/
 .DS_Store
+.ipynb_checkpoints
