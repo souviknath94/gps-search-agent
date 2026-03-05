@@ -43,10 +43,12 @@ Let:
 - $\text{reward}$ be the reward for reaching the goal state.
 
 **Step 1: Calculate the Score**
+
 $$\text{score} = \text{reward} - (g(n) + h(n) + \text{penalty})$$
 
 **Step 2: Calculate Fitness Value**
 To facilitate **Roulette Wheel Selection**, all fitness scores must be positive. We map negative scores to a small value between $(0, 1]$ to ensure they have a minimal chance of selection:
+
 $$
 \text{fitness} = \begin{cases} \frac{1}{|\text{score}|}, & \text{if score} < 0 \\ \text{score}, & \text{otherwise} \end{cases}
 $$
